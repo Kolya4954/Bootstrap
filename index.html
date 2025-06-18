@@ -1,95 +1,124 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html lang="uk">
 <head>
-  <meta charset="UTF-8">
-  <title>Eats Restaurant</title>
+  <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <!-- Bootstrap CSS -->
+  <title>Аптека Онлайн</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body>
 
-<!-- Header -->
-<nav class="navbar navbar-expand-lg bg-white shadow-sm py-3">
+<!-- Хедер -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
   <div class="container">
-    <a class="navbar-brand" href="#">
-      <img src="eats-logo.png" alt="Eats Logo" height="40">
-    </a>
+    <a class="navbar-brand" href="#">Аптека+</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
     </button>
-    <div class="collapse navbar-collapse" id="navMenu">
+    <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav ms-auto">
-        <li class="nav-item"><a class="nav-link active text-danger" href="#">Home</a></li>
-        <li class="nav-item"><a class="nav-link" href="#">Product</a></li>
-        <li class="nav-item"><a class="nav-link" href="#">Faq</a></li>
-        <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+        <li class="nav-item"><a class="nav-link active" href="#">Головна</a></li>
+        <li class="nav-item"><a class="nav-link" href="#about">Про нас</a></li>
+        <li class="nav-item"><a class="nav-link" href="#products">Товари</a></li>
+        <li class="nav-item"><a class="nav-link" href="#reviews">Відгуки</a></li>
+        <li class="nav-item"><a class="nav-link" href="#contact">Контакти</a></li>
       </ul>
     </div>
   </div>
 </nav>
 
-<!-- Hero Section -->
-<section class="text-white text-center py-5" style="background-image: url('food-background.jpg'); background-size: cover; background-position: center;">
+<!-- Головний банер -->
+<header class="bg-light text-center py-5">
   <div class="container">
-    <h6 class="fw-bold">Restaurant app</h6>
-    <h1 class="fw-bold display-5">Why stay hungry when <br> you can order form Eats</h1>
-    <p class="lead">Order in exchange for hunger</p>
-    <div class="mt-4">
-      <a href="#" class="btn btn-danger btn-lg me-3 px-4">Delivery</a>
-      <a href="#" class="btn btn-outline-light btn-lg px-4">Menu</a>
-    </div>
+    <h1 class="display-4">Ліки, яким ви довіряєте</h1>
+    <p class="lead">Швидка доставка. Доступні ціни. Надійність.</p>
+    <img src="./images/image_0-5.jpg" class="img-fluid mt-3" alt="Банер">
   </div>
-</section>
+</header>
 
-<!-- How the App Works -->
-<section class="py-5 text-center">
+<!-- Про нас -->
+<section id="about" class="py-5 bg-white">
   <div class="container">
-    <h2 class="mb-5 fw-bold">How the app works</h2>
-
-    <div class="row align-items-center mb-5">
-      <div class="col-md-6 mb-4 mb-md-0">
-        <img src="login-phone.png" class="img-fluid" alt="Login">
+    <h2 class="text-center mb-4">Про нас</h2>
+    <div class="row">
+      <div class="col-md-6">
+        <p>Аптека+ — це сучасна онлайн-аптека, яка надає якісні медичні товари по всій Україні. Ми працюємо з 2013 року, і за цей час заслужили довіру тисяч клієнтів. Наша мета — зробити процес купівлі ліків простим, безпечним і доступним для кожного.</p>
+        <p>У нашому каталозі понад 5000 найменувань сертифікованої продукції: рецептурні та безрецептурні препарати, вітаміни, медичні засоби, косметика та товари для дітей. Ми співпрацюємо лише з перевіреними виробниками, тому ви можете бути впевнені у якості кожного товару.</p>
+        <p>Ми цінуємо час наших клієнтів, тому гарантуємо швидку обробку замовлень і доставку Новою Поштою, Укрпоштою або кур'єром по місту. Крім того, наші фармацевти завжди готові надати консультацію онлайн чи телефоном.</p>
+        <p>Аптека+ — здоров'я в кожен дім.</p>
       </div>
-      <div class="col-md-6 text-start">
-        <h6 class="text-danger">Create an account</h6>
-        <h4 class="fw-bold">Create/login to an existing account to get started</h4>
-        <p>An account is created with your email and a desired password</p>
-      </div>
-    </div>
-
-    <div class="row align-items-center">
-      <div class="col-md-6 text-start order-2 order-md-1">
-        <h6 class="text-danger">Explore varieties</h6>
-        <h4 class="fw-bold">Shop for your favorites meal as e dey hot.</h4>
-        <p>Shop for your favorite meals or drinks and enjoy while doing it.</p>
-      </div>
-      <div class="col-md-6 order-1 order-md-2 mb-4 mb-md-0">
-        <img src="menu-phone.png" class="img-fluid" alt="Menu">
+      <div class="col-md-6">
+        <img src="./images/dostupni-liki-ternopil-19-05-2020.jpg" class="img-fluid rounded" alt="Про нас">
       </div>
     </div>
   </div>
 </section>
 
-<!-- Order Now -->
-<section class="py-5 text-white text-center" style="background-image: url('bags-background.jpg'); background-size: cover; background-position: center;">
+<!-- Наші товари -->
+<section id="products" class="py-5 bg-light">
   <div class="container">
-    <h2 class="fw-bold">Order now.</h2>
-    <p>Available on your favorite store. Start your premium experience now</p>
-    <div class="mt-4">
-      <a href="#" class="btn btn-danger me-3 px-4">Playstore</a>
-      <a href="#" class="btn btn-outline-light px-4">App store</a>
+    <h2 class="text-center mb-4">Наші товари</h2>
+    <div class="row">
+      <div class="col-md-4 mb-4">
+        <div class="card h-100">
+          <img src="./images/images (1).jpg" class="card-img-top" alt="Товар 1">
+          <div class="card-body">
+            <h5 class="card-title">Парацетамол</h5>
+            <p class="card-text">Жарознижувальний засіб. Доступний для дітей і дорослих.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 mb-4">
+        <div class="card h-100">
+          <img src="./images/add2ecee-0a4a-11f0-82f4-00155d9a5309-800x800.jpg" class="card-img-top" alt="Товар 2">
+          <div class="card-body">
+            <h5 class="card-title">Вітамін C</h5>
+            <p class="card-text">Підтримка імунітету. Підходить для щоденного вживання.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 mb-4">
+        <div class="card h-100">
+          <img src="./images/043626-strepsils-intensiv-spre.1000x1000w.webp" class="card-img-top" alt="Товар 3">
+          <div class="card-body">
+            <h5 class="card-title">Спрей для горла</h5>
+            <p class="card-text">Швидке полегшення болю в горлі. Антисептична дія.</p>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 </section>
 
-<!-- Footer -->
-<footer class="bg-white text-center py-4 mt-5 border-top">
+<!-- Відгуки -->
+<section id="reviews" class="py-5 bg-white">
   <div class="container">
-    <img src="eats-logo.png" alt="Eats Logo" height="40" class="mb-2">
-    <p class="mb-0 small text-muted">Copyright 2020 Bella Onojie.com</p>
+    <h2 class="text-center mb-4">Відгуки клієнтів</h2>
+    <div class="row">
+      <div class="col-md-6">
+        <blockquote class="blockquote">
+          <p>"Швидка доставка, чудовий сервіс. Замовлятиму ще!"</p>
+          <footer class="blockquote-footer">Ірина з Києва</footer>
+        </blockquote>
+      </div>
+      <div class="col-md-6">
+        <blockquote class="blockquote">
+          <p>"Завжди знаходжу все, що потрібно. Ціни найкращі!"</p>
+          <footer class="blockquote-footer">Олег з Харкова</footer>
+        </blockquote>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Футер -->
+<footer id="contact" class="bg-dark text-white py-4">
+  <div class="container text-center">
+    <p>© 2025 Аптека Онлайн. Всі права захищені.</p>
+    <p>Email: info@apteka.com | Тел: +380 00 000 0000</p>
   </div>
 </footer>
 
-<!-- Bootstrap JS -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
